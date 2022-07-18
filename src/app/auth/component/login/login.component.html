@@ -1,0 +1,14 @@
+<form [formGroup]="loginForm">
+    <label for="">Ingrese Correo:</label>
+    <input type="email" formControlName="email">
+    <br>
+
+    <label for="">Ingrese password:</label>
+    <input type="password" formControlName="password">
+
+    <br>
+    <button type="button" [disabled]="!loginForm.valid" (click)="login()">Ingresar</button>
+</form>
+<hr>
+{{ loginForm.value | json}} |
+{{ loginForm.valid }}
