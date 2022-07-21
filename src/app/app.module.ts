@@ -30,6 +30,7 @@ import { PhotoService } from './service/photoservice';
 import { ProductService } from './service/productservice';
 import { MenuService } from './service/app.menu.service';
 import { ConfigService } from './service/app.config.service';
+import { MenuComponent } from './layout/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ConfigService } from './service/app.config.service';
     AppFooterComponent,
     AppConfigComponent,
     AppMenuComponent,
-    AppMenuitemComponent
+    AppMenuitemComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
